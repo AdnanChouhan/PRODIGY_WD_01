@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    inline-size: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.main-header {
+    background: url('assets/tip-for-web-design.jpg') center center/cover;
+    color: #fff;
+    padding-block-start: 30px;
+    min-block-size: 70px;
+    border-block-end: #e50914 3px solid;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-inline-start: 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    background-color: #e50914;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.profile-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.profile-picture {
+    inline-size: 150px;
+    block-size: 150px;
+    border-radius: 50%;
+    border: 3px solid #e50914;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.profile-picture:hover {
+    transform: scale(1.1);
+}
+
+.profile-section h1 {
+    font-size: 2rem;
+    margin-block-start: 10px;
+    color: red;
+}
+
+.profile-section p {
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    color: #dd0000;
+}
+
+.hero h1 {
+    font-size: 50px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.btn {
+    display: inline-block;
+    color: #130101;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    animation: fadeIn 4s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #e50914;
+}
+
+.about-section, .projects-section, .contact-section {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.about-section h2, .projects-section h2, .contact-section h2 {
+    font-size: 30px;
+    margin-block-end: 20px;
+    text-align: center;
+}
+
+.about-section p {
+    font-size: 18px;
+    text-align: center;
+    inline-size: 60%;
+    margin: auto;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.icons {
+    text-align: center;
+    margin-block-start: 30px;
+}
+
+.icons i {
+    font-size: 40px;
+    margin: 0 15px;
+    color: #333;
+    transition: color 0.3s;
+    animation: bounce 2s infinite;
+}
+
+.icons i:hover {
+    color: #e50914;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    block-size: 200px; 
+    inline-size: auto; 
+    cursor: pointer; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+
+
+.projects-section .project-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.projects-section .project {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.projects-section .project img {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+.projects-section .project:hover {
+    transform: translateY(-10px);
+}
+
+.projects-section .project h3 {
+    margin-block-start: 15px;
+}
+
+.projects-section .project p {
+    font-size: 16px;
+    margin-block-start: 10px;
+}
+
+.contact-section form {
+    inline-size: 60%;
+    margin: auto;
+}
+
+.form-group {
+    margin-block-end: 20px;
+}
+
+.form-group label {
+    font-size: 18px;
+    display: block;
+}
+
+.form-group input, .form-group textarea {
+    inline-size: 100%;
+    padding: 10px;
+    border: 1px solid #383535;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+.main-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-block-start: 50px;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-20px); }
+    60% { transform: translateY(-10px); }
+}
