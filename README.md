@@ -8,7 +8,7 @@ Home Page: Features a professional photo, a headline, and a summary of skills.
 
 About Me Section: Provides detailed information about my background, education, and experience.
 
-Projects Section: Highlights my key projects with links to GitHub and live demos.
+Projects Section: Highlights my key projects.
 
 Contact Section: Includes a form to allow visitors to get in touch with me directly.
 
